@@ -3,20 +3,20 @@
         <div class="row">
             <div class="col-md-4">
                 <lbd-chart
-                  [title]="'Email Statistics'"
-                  [subtitle]="'Last Campaign Performance'"
+                  [title]="'Resource Statistics'"
+                  [subtitle]="'Live Utilization'"
                   [chartClass]="'ct-perfect-fourth'"
                   [chartType]="emailChartType"
                   [chartData]="emailChartData"
                   [legendItems]="emailChartLegendItems"
                   [withHr]="true"
                   [footerIconClass]="'fa fa-clock-o'"
-                  [footerText]="'Campaign sent 2 days ago'">
+                  [footerText]="'Updated every 24 hours'">
                 </lbd-chart>
             </div>
             <div class="col-md-8">
                 <lbd-chart
-                  [title]="'Users Behavior'"
+                  [title]="'Users Utilization'"
                   [subtitle]="'24 Hours performance'"
                   [chartType]="hoursChartType"
                   [chartData]="hoursChartData"
@@ -25,15 +25,15 @@
                   [legendItems]="hoursChartLegendItems"
                   [withHr]="true"
                   [footerIconClass]="'fa fa-history'"
-                  [footerText]="'Updated 3 minutes ago'">
+                  [footerText]="'Updated every 24 hours'">
                 </lbd-chart>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <lbd-chart
-                  [title]="'2014 Sales'"
-                  [subtitle]="'All products including Taxes'"
+                  [title]="'Unified Access Gateway Server'"
+                  [subtitle]="'User connected sessions'"
                   [chartType]="activityChartType"
                   [chartData]="activityChartData"
                   [chartOptions]="activityChartOptions"
@@ -47,8 +47,8 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Tasks</h4>
-                        <p class="category">Backend development</p>
+                        <h4 class="title">Remediation Tasks</h4>
+                        <p class="category">Backend Actions</p>
                     </div>
                     <div class="content">
                         <div class="table-full-width">

@@ -7,8 +7,8 @@ declare interface TableData {
 
 @Component({
   selector: 'app-tables',
-  templateUrl: './tables.component.html',
-  styleUrls: ['./tables.component.css']
+  templateUrl: './tables.component.html'
+//   styleUrls: ['./tables.component.css']
 })
 export class TablesComponent implements OnInit {
     public tableData1: TableData;
@@ -18,7 +18,7 @@ export class TablesComponent implements OnInit {
 
   ngOnInit() {
       this.tableData1 = {
-          headerRow: [ 'ID', 'Name', 'Country', 'City', 'Salary'],
+          headerRow: [ 'Name', 'Status', 'Version', 'Build', 'Certificate_Status', 'Certificate_Expiring', 'Certificate_Expiration_Time'],
           dataRows: [
               ['1', 'Dakota Rice', 'Niger', 'Oud-Turnhout', '$36,738'],
               ['2', 'Minerva Hooper', 'Curaçao', 'Sinaai-Waas', '$23,789'],

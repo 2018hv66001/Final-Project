@@ -29,13 +29,14 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
       this.emailChartType = ChartType.Pie;
       this.emailChartData = {
-        labels: ['62%', '32%', '6%'],
-        series: [62, 32, 6]
+        labels: ['62%', '32%', '4%', '2%'],
+        series: [40, 35, 20, 5]
       };
       this.emailChartLegendItems = [
-        { title: 'Open', imageClass: 'fa fa-circle text-info' },
-        { title: 'Bounce', imageClass: 'fa fa-circle text-danger' },
-        { title: 'Unsubscribe', imageClass: 'fa fa-circle text-warning' }
+        { title: 'U1', imageClass: 'fa fa-circle text-info' },
+        { title: 'U2 ', imageClass: 'fa fa-circle text-danger' },
+        { title: 'U3', imageClass: 'fa fa-circle text-warning' },
+        { title: 'U4', imageClass: 'fa fa-circle text-info' }
       ];
 
       this.hoursChartType = ChartType.Line;
